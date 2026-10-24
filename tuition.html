@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.tuition.title">Tuition – Yaylish</title>
+  <meta name="description" content="Clear tuition for every level. Choose monthly, term or package pricing and pay by bank transfer or VietQR." data-i18n-attr="content:meta.tuition.desc">
+  <meta name="theme-color" content="#3454D1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yaylish">
+  <meta property="og:title" content="Tuition – Yaylish" data-i18n-attr="content:meta.tuition.title">
+  <meta property="og:description" content="Clear tuition for every level. Choose monthly, term or package pricing and pay by bank transfer or VietQR." data-i18n-attr="content:meta.tuition.desc">
+  <meta property="og:image" content="assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>/* font preload (skipped on file:// where browsers block it) */if(location.protocol!=="file:"){["baloo-2-latin-wght-normal","be-vietnam-pro-latin-400-normal"].forEach(function(f){var l=document.createElement("link");l.rel="preload";l.as="font";l.type="font/woff2";l.crossOrigin="";l.href="assets/fonts/"+f+".woff2";document.head.appendChild(l)})}</script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Site settings (brand, colors, contact, languages…) – edit site.config.js -->
+  <script src="site.config.js"></script>
+  <script src="assets/js/boot.js"></script>
+</head>
+<body data-page="tuition" class="bg-cream">
+<div role="note" style="background:#243BA0;color:#fff;font:600 13px/1.4 'Be Vietnam Pro',system-ui,sans-serif;text-align:center;padding:8px 12px">Demo preview of the Yaylish template · all names, prices and contact details are sample content · Bản xem thử, toàn bộ nội dung là nội dung mẫu</div>
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to main content</a>
+  <header id="site-header" class="sticky top-0 z-40 border-b border-ink/10 bg-cream/90 backdrop-blur"></header>
+  <main id="main">
+    <section class="relative overflow-hidden bg-brand-soft/60">
+      <div class="container-x py-14 sm:py-20">
+        <p class="eyebrow" data-i18n="tuition.eyebrow">Tuition</p>
+        <h1 class="mt-4 max-w-3xl text-4xl text-balance sm:text-5xl" data-i18n="tuition.title">Simple, transparent tuition</h1>
+        <p class="lead mt-4 max-w-2xl" data-i18n="tuition.text">Choose how you would like to pay. Longer plans cost less per class.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="tt-h">
+      <div class="container-x">
+        <h2 id="tt-h" class="sr-only" data-i18n="tuition.title">Simple, transparent tuition</h2>
+        <div role="radiogroup" id="tuition-toggle" class="flex flex-wrap gap-2" data-i18n-attr="aria-label:tuition.toggle" aria-label="Payment plan"></div>
+        <p id="tuition-plan-desc" class="mt-4 min-h-[1.5rem] font-bold text-brand-dark" aria-live="polite"></p>
+        <div id="tuition-table" class="mt-4"></div>
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
+          <div class="card"><h3 class="text-xl" data-i18n="tuition.included.title">What's included</h3><ul class="prose-list mt-4 space-y-2"><li data-i18n="tuition.included1">All lessons with the class teacher</li><li data-i18n="tuition.included2">Course book and activity materials</li><li data-i18n="tuition.included3">A progress note every month</li><li data-i18n="tuition.included4">A parent–teacher check-in every term</li></ul></div>
+          <div class="card"><h3 class="text-xl" data-i18n="tuition.extra.title">Good to know</h3><ul class="prose-list mt-4 space-y-2"><li data-i18n="tuition.extra1">Brothers and sisters: ask about our family discount.</li><li data-i18n="tuition.extra2">Exam registration fees, if any, are charged separately.</li><li data-i18n="tuition.extra3">Tuition is paid in advance. Missed classes can be made up within the same term.</li></ul></div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-white" aria-label="How to pay" data-i18n-attr="aria-label:tuition.pay.title">
+      <div class="container-x"><div id="payment-block" class="card bg-cream" hidden></div></div>
+    </section>
+    <section class="section" aria-labelledby="faq-h">
+      <div class="container-x max-w-3xl">
+        <h2 id="faq-h" class="text-3xl text-balance sm:text-4xl" data-i18n="tuition.faq.title">Questions parents ask</h2>
+        <div class="mt-8 space-y-3">
+        <details class="group rounded-2xl bg-white p-5 shadow-soft ring-1 ring-ink/5">
+          <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 rounded-xl font-display text-lg font-bold"><span data-i18n="tuition.faq1.q">Can we try a class before paying?</span><span class="shrink-0 text-brand transition group-open:rotate-180" data-icon="chevron-down"></span></summary>
+          <p class="mt-3 text-muted" data-i18n="tuition.faq1.a">Yes. Every new family can join one free trial class. There is no payment and no obligation.</p></details>
+        <details class="group rounded-2xl bg-white p-5 shadow-soft ring-1 ring-ink/5">
+          <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 rounded-xl font-display text-lg font-bold"><span data-i18n="tuition.faq2.q">How do I choose between monthly, term and package?</span><span class="shrink-0 text-brand transition group-open:rotate-180" data-icon="chevron-down"></span></summary>
+          <p class="mt-3 text-muted" data-i18n="tuition.faq2.a">Monthly is the most flexible. Term and package plans cost less per class if you plan to stay for longer.</p></details>
+        <details class="group rounded-2xl bg-white p-5 shadow-soft ring-1 ring-ink/5">
+          <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 rounded-xl font-display text-lg font-bold"><span data-i18n="tuition.faq3.q">What if my child misses a class?</span><span class="shrink-0 text-brand transition group-open:rotate-180" data-icon="chevron-down"></span></summary>
+          <p class="mt-3 text-muted" data-i18n="tuition.faq3.a">You can make up a missed class in another session of the same level within the term, depending on available seats.</p></details>
+        <details class="group rounded-2xl bg-white p-5 shadow-soft ring-1 ring-ink/5">
+          <summary class="flex min-h-[44px] cursor-pointer list-none items-center justify-between gap-4 rounded-xl font-display text-lg font-bold"><span data-i18n="tuition.faq4.q">How do we find the right level?</span><span class="shrink-0 text-brand transition group-open:rotate-180" data-icon="chevron-down"></span></summary>
+          <p class="mt-3 text-muted" data-i18n="tuition.faq4.a">Book a free trial. The teacher will chat with your child, then recommend the best level.</p></details>
+        </div>
+        <p class="mt-10 text-center"><a class="btn btn-primary" href="book-trial.html" data-i18n="common.bookTrial">Book a free trial</a></p>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="chat-buttons"></div>
+  <noscript><p class="container-x py-6 text-center font-bold" data-i18n="common.needJs">Please enable JavaScript to see this section.</p></noscript>
+  <script src="assets/i18n/en.js"></script>
+  <script src="assets/i18n/vi.js"></script>
+  <script src="assets/data/levels.js"></script>
+  <script src="assets/data/tuition.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/tuition.js"></script>
+</body>
+</html>

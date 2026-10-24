@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.book.title">Book a free trial class – Yaylish</title>
+  <meta name="description" content="Tell us about your child and pick a time. Your first trial class is free." data-i18n-attr="content:meta.book.desc">
+  <meta name="theme-color" content="#3454D1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yaylish">
+  <meta property="og:title" content="Book a free trial class – Yaylish" data-i18n-attr="content:meta.book.title">
+  <meta property="og:description" content="Tell us about your child and pick a time. Your first trial class is free." data-i18n-attr="content:meta.book.desc">
+  <meta property="og:image" content="assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>/* font preload (skipped on file:// where browsers block it) */if(location.protocol!=="file:"){["baloo-2-latin-wght-normal","be-vietnam-pro-latin-400-normal"].forEach(function(f){var l=document.createElement("link");l.rel="preload";l.as="font";l.type="font/woff2";l.crossOrigin="";l.href="assets/fonts/"+f+".woff2";document.head.appendChild(l)})}</script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Site settings (brand, colors, contact, languages…) – edit site.config.js -->
+  <script src="site.config.js"></script>
+  <script src="assets/js/boot.js"></script>
+</head>
+<body data-page="book" class="bg-cream">
+<div role="note" style="background:#243BA0;color:#fff;font:600 13px/1.4 'Be Vietnam Pro',system-ui,sans-serif;text-align:center;padding:8px 12px">Demo preview of the Yaylish template · all names, prices and contact details are sample content · Bản xem thử, toàn bộ nội dung là nội dung mẫu</div>
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to main content</a>
+  <header id="site-header" class="sticky top-0 z-40 border-b border-ink/10 bg-cream/90 backdrop-blur"></header>
+  <main id="main">
+    <section class="relative overflow-hidden bg-brand-soft/60">
+      <div class="container-x py-14 sm:py-20">
+        <p class="eyebrow" data-i18n="book.eyebrow">Free trial class</p>
+        <h1 class="mt-4 max-w-3xl text-4xl text-balance sm:text-5xl" data-i18n="book.title">Book a free trial class</h1>
+        <p class="lead mt-4 max-w-2xl" data-i18n="book.text">Three quick steps. We will contact you to confirm a time – no payment needed.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container-x grid items-start gap-8 lg:grid-cols-[1fr_380px]">
+        <div>
+        <form id="trial-form" class="card space-y-8" novalidate name="trial-booking" data-netlify="true" netlify-honeypot="website">
+          <input type="hidden" name="form-name" value="trial-booking">
+          <div>
+            <div role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-labelledby="step-indicator" class="h-3 overflow-hidden rounded-full bg-brand-soft"><div id="step-bar" class="h-full rounded-full bg-brand transition-all duration-300" style="width:33%"></div></div>
+            <p id="step-indicator" class="mt-2 text-sm font-bold text-muted" aria-live="polite"></p>
+          </div>
+          <p id="slot-note" class="rounded-2xl bg-accent/40 p-3 text-sm font-bold text-ink" hidden></p>
+          <p class="sr-only" id="form-status" role="status"></p>
+          <p class="hidden" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+
+          <fieldset data-step class="space-y-5">
+            <legend class="font-display text-2xl font-bold outline-none" data-i18n="book.step1">Your child</legend>
+            <div class="field"><label class="label" for="childName"><span data-i18n="book.childName">Child's name</span><span aria-hidden="true" class="text-coral"> *</span></label><input class="input" id="childName" name="childName" type="text" autocomplete="off" aria-required="true" placeholder="e.g. Minh An" data-i18n-attr="placeholder:book.childNamePh"><p class="error-text" id="err-childName" hidden></p></div>
+            <div class="field"><label class="label" for="childAge"><span data-i18n="book.childAge">Child's age</span><span aria-hidden="true" class="text-coral"> *</span></label><input class="input sm:max-w-[10rem]" id="childAge" name="childAge" type="number" inputmode="numeric" min="3" max="15" aria-required="true"><p class="error-text" id="err-childAge" hidden></p></div>
+            <div class="field"><label class="label" for="level"><span data-i18n="book.level">Level</span></label><select class="input" id="level" name="level"></select><p class="hint" data-i18n="book.levelHint">Choose a level if you know it. If not, we will recommend one.</p></div>
+            <fieldset class="field"><legend class="label" data-i18n="book.experience">English experience</legend><div class="flex flex-wrap gap-2"><label class="relative"><input class="peer sr-only" type="radio" name="experience" value="none" checked><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.exp.none">Just starting</span></label><label class="relative"><input class="peer sr-only" type="radio" name="experience" value="some"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.exp.some">Some English</span></label><label class="relative"><input class="peer sr-only" type="radio" name="experience" value="good"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.exp.good">Quite confident</span></label></div></fieldset>
+          </fieldset>
+
+          <fieldset data-step class="space-y-5" hidden>
+            <legend class="font-display text-2xl font-bold outline-none" data-i18n="book.step2">Class preference</legend>
+            <fieldset class="field"><legend class="label"><span data-i18n="book.days">Days that work for you</span><span aria-hidden="true" class="text-coral"> *</span></legend><div class="flex flex-wrap gap-2"><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="mon"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.mon">Monday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="tue"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.tue">Tuesday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="wed"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.wed">Wednesday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="thu"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.thu">Thursday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="fri"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.fri">Friday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="sat"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.sat">Saturday</span></label><label class="relative"><input class="peer sr-only" type="checkbox" name="days" value="sun"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="day.sun">Sunday</span></label></div><p class="hint" data-i18n="book.daysHint">Pick one or more.</p><p class="error-text" id="err-days" hidden></p></fieldset>
+            <fieldset class="field"><legend class="label" data-i18n="book.time">Preferred time</legend><div class="flex flex-wrap gap-2"><label class="relative"><input class="peer sr-only" type="radio" name="time" value="morning"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.time.morning">Morning</span></label><label class="relative"><input class="peer sr-only" type="radio" name="time" value="afternoon"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.time.afternoon">Afternoon</span></label><label class="relative"><input class="peer sr-only" type="radio" name="time" value="evening"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.time.evening">Evening</span></label><label class="relative"><input class="peer sr-only" type="radio" name="time" value="any" checked><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.time.any">Any time</span></label></div></fieldset>
+            <div class="field"><label class="label" for="start"><span data-i18n="book.start">When would you like to start?</span></label><select class="input sm:max-w-sm" id="start" name="start">
+              <option value="asap" data-i18n="book.start.asap">As soon as possible</option><option value="2w" data-i18n="book.start.2w">Within 2 weeks</option><option value="month" data-i18n="book.start.month">Next month</option><option value="later" data-i18n="book.start.later">Just exploring</option></select></div>
+          </fieldset>
+
+          <fieldset data-step class="space-y-5" hidden>
+            <legend class="font-display text-2xl font-bold outline-none" data-i18n="book.step3">Your contact</legend>
+            <div class="field"><label class="label" for="parentName"><span data-i18n="book.parentName">Parent's name</span><span aria-hidden="true" class="text-coral"> *</span></label><input class="input" id="parentName" name="parentName" type="text" autocomplete="name" aria-required="true" data-i18n-attr="placeholder:book.parentNamePh" placeholder="e.g. Tran Thi Lan"><p class="error-text" id="err-parentName" hidden></p></div>
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div class="field"><label class="label" for="phone"><span data-i18n="book.phone">Phone / Zalo number</span><span aria-hidden="true" class="text-coral"> *</span></label><input class="input" id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-required="true" data-i18n-attr="placeholder:book.phonePh" placeholder="e.g. 0900 000 000"><p class="error-text" id="err-phone" hidden></p></div>
+              <div class="field"><label class="label" for="email"><span data-i18n="book.email">Email (optional)</span></label><input class="input" id="email" name="email" type="email" autocomplete="email" data-i18n-attr="placeholder:book.emailPh" placeholder="name@example.com"><p class="error-text" id="err-email" hidden></p></div>
+            </div>
+            <fieldset class="field"><legend class="label" data-i18n="book.contactMethod">How should we contact you?</legend><div class="flex flex-wrap gap-2"><label class="relative"><input class="peer sr-only" type="radio" name="contactMethod" value="zalo" checked><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.cm.zalo">Zalo</span></label><label class="relative"><input class="peer sr-only" type="radio" name="contactMethod" value="phone"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.cm.phone">Phone call</span></label><label class="relative"><input class="peer sr-only" type="radio" name="contactMethod" value="email"><span class="chip cursor-pointer peer-checked:border-brand peer-checked:bg-brand peer-checked:text-white peer-focus-visible:ring-4 peer-focus-visible:ring-brand/40" data-i18n="book.cm.email">Email</span></label></div></fieldset>
+            <div class="field"><label class="label" for="message"><span data-i18n="book.message">Anything we should know? (optional)</span></label><textarea class="input min-h-[7rem]" id="message" name="message" rows="4" data-i18n-attr="placeholder:book.messagePh" placeholder="e.g. my child is shy, or is learning English at school"></textarea></div>
+            <div class="field"><label class="flex cursor-pointer items-start gap-3"><input class="mt-1 h-6 w-6 shrink-0 accent-brand" type="checkbox" id="consent" name="consent" aria-required="true"><span class="text-[15px]" data-i18n="book.consent">I agree that Yaylish may contact me about this trial class.</span></label><p class="error-text" id="err-consent" hidden></p></div>
+          </fieldset>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 border-t border-ink/10 pt-6">
+            <button type="button" id="btn-back" class="btn btn-outline" hidden><span data-icon="arrow-left"></span><span data-i18n="common.back">Back</span></button>
+            <span class="flex-1"></span>
+            <button type="button" id="btn-next" class="btn btn-primary"><span data-i18n="common.next">Next</span><span data-icon="arrow-right"></span></button>
+            <button type="submit" id="btn-send" class="btn btn-primary" hidden><span data-i18n="common.send">Send request</span><span data-icon="send"></span></button>
+          </div>
+        </form>
+
+        <!-- Demo mode: shown when form.provider is "none". Nothing has been sent. -->
+        <section id="form-demo" class="card" hidden aria-labelledby="demo-h">
+          <h2 id="demo-h" class="text-2xl" data-i18n="book.demo.title">Form check passed – demo mode</h2>
+          <p class="mt-3 rounded-2xl bg-accent/40 p-4 font-bold text-ink" data-i18n="book.demo.text">This template's form is not connected to a service yet, so nothing has been sent. Set the form provider in site.config.js (see the documentation).</p>
+          <p class="mt-5 font-bold" data-i18n="book.demo.fallback">Meanwhile you can send this request by email or Zalo:</p>
+          <div id="demo-actions" class="mt-3 flex flex-wrap gap-3"></div>
+          <h3 class="mt-6 text-lg" data-i18n="book.review">Please review</h3>
+          <pre id="demo-summary" class="mt-2 overflow-x-auto whitespace-pre-wrap rounded-2xl bg-brand-soft/60 p-4 text-sm"></pre>
+          <p class="mt-6"><button type="button" class="btn btn-outline" data-form-reset data-i18n="book.again">Edit my details</button></p>
+        </section>
+        <section id="form-success" class="card text-center" hidden aria-labelledby="ok-h">
+          <span class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-mint text-ink" data-icon="check" data-icon-class="h-8 w-8"></span>
+          <h2 id="ok-h" class="mt-4 text-2xl" data-i18n="book.sent.title">Thank you – your request is in!</h2>
+          <p class="mx-auto mt-3 max-w-md text-muted" data-i18n="book.sent.text">We will contact you soon to confirm a trial time. Your child's first class is free.</p>
+          <p class="mt-6"><a class="btn btn-secondary" href="index.html" data-i18n="notfound.home">Back to home</a></p>
+        </section>
+        <section id="form-fail" class="card" hidden aria-labelledby="fail-h">
+          <h2 id="fail-h" class="text-2xl" data-i18n="book.fail.title">Sorry, something went wrong</h2>
+          <p class="mt-3 text-muted" data-i18n="book.fail.text">Your request could not be sent. Please try again, or contact us directly:</p>
+          <div id="fail-links" class="mt-4 flex flex-wrap gap-3"></div>
+          <p class="mt-6"><button type="button" class="btn btn-outline" data-form-reset data-i18n="book.again">Edit my details</button></p>
+        </section>
+          <p id="calendly-box" class="mt-6 text-sm text-muted" hidden><span data-i18n="book.calendly">Prefer to pick a time online?</span> <a class="font-bold text-brand-dark underline underline-offset-4" target="_blank" rel="noopener noreferrer" href="#" data-i18n="book.calendly.link">Open the booking calendar</a></p>
+        </div>
+        <aside class="card bg-brand-soft/60 lg:sticky lg:top-24" aria-labelledby="next-h">
+          <h2 id="next-h" class="text-2xl" data-i18n="book.next.title">What happens next?</h2>
+          <ol class="mt-5 space-y-5">
+            <li class="flex gap-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent font-display text-lg font-extrabold text-ink">1</span>
+              <div><h3 class="text-lg" data-i18n="book.next1.title">We contact you</h3><p class="mt-1 text-[15px] text-muted" data-i18n="book.next1.text">We will message or call you to confirm a trial time.</p></div></li>
+            <li class="flex gap-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent font-display text-lg font-extrabold text-ink">2</span>
+              <div><h3 class="text-lg" data-i18n="book.next2.title">Meet the teacher</h3><p class="mt-1 text-[15px] text-muted" data-i18n="book.next2.text">Your child joins a relaxed class of about 60 minutes and gets a gentle level check.</p></div></li>
+            <li class="flex gap-4"><span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-accent font-display text-lg font-extrabold text-ink">3</span>
+              <div><h3 class="text-lg" data-i18n="book.next3.title">Get a clear plan</h3><p class="mt-1 text-[15px] text-muted" data-i18n="book.next3.text">We recommend a level and share simple tuition options – no pressure.</p></div></li>
+          </ol>
+          <p class="mt-6 text-sm font-bold" data-i18n="book.chat">Questions first? Message us:</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a class="btn btn-outline !min-h-[44px] !px-4 !py-2 text-sm" target="_blank" rel="noopener noreferrer" data-cfg-href="https://zalo.me/|contact.zalo" href="#">Zalo</a>
+            <a class="btn btn-outline !min-h-[44px] !px-4 !py-2 text-sm" target="_blank" rel="noopener noreferrer" data-cfg-href="https://m.me/|contact.messenger" href="#">Messenger</a>
+            <a class="btn btn-outline !min-h-[44px] !px-4 !py-2 text-sm" data-cfg-href="tel:|contact.hotline" href="#"><span data-cfg="contact.hotlineDisplay"></span></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="chat-buttons"></div>
+  <noscript><p class="container-x py-6 text-center font-bold" data-i18n="common.needJs">Please enable JavaScript to see this section.</p></noscript>
+  <script src="assets/i18n/en.js"></script>
+  <script src="assets/i18n/vi.js"></script>
+  <script src="assets/data/levels.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/trial-form.js"></script>
+</body>
+</html>

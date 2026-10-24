@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.schedule.title">Class schedule – Yaylish</title>
+  <meta name="description" content="See the weekly class timetable and filter by level to find a time that fits your family." data-i18n-attr="content:meta.schedule.desc">
+  <meta name="theme-color" content="#3454D1">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yaylish">
+  <meta property="og:title" content="Class schedule – Yaylish" data-i18n-attr="content:meta.schedule.title">
+  <meta property="og:description" content="See the weekly class timetable and filter by level to find a time that fits your family." data-i18n-attr="content:meta.schedule.desc">
+  <meta property="og:image" content="assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>/* font preload (skipped on file:// where browsers block it) */if(location.protocol!=="file:"){["baloo-2-latin-wght-normal","be-vietnam-pro-latin-400-normal"].forEach(function(f){var l=document.createElement("link");l.rel="preload";l.as="font";l.type="font/woff2";l.crossOrigin="";l.href="assets/fonts/"+f+".woff2";document.head.appendChild(l)})}</script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Site settings (brand, colors, contact, languages…) – edit site.config.js -->
+  <script src="site.config.js"></script>
+  <script src="assets/js/boot.js"></script>
+</head>
+<body data-page="schedule" class="bg-cream">
+<div role="note" style="background:#243BA0;color:#fff;font:600 13px/1.4 'Be Vietnam Pro',system-ui,sans-serif;text-align:center;padding:8px 12px">Demo preview of the Yaylish template · all names, prices and contact details are sample content · Bản xem thử, toàn bộ nội dung là nội dung mẫu</div>
+  <a class="skip-link" href="#main" data-i18n="common.skip">Skip to main content</a>
+  <header id="site-header" class="sticky top-0 z-40 border-b border-ink/10 bg-cream/90 backdrop-blur"></header>
+  <main id="main">
+    <section class="relative overflow-hidden bg-brand-soft/60">
+      <div class="container-x py-14 sm:py-20">
+        <p class="eyebrow" data-i18n="schedule.eyebrow">Timetable</p>
+        <h1 class="mt-4 max-w-3xl text-4xl text-balance sm:text-5xl" data-i18n="schedule.title">Weekly class schedule</h1>
+        <p class="lead mt-4 max-w-2xl" data-i18n="schedule.text">Pick a level to see its class times. Seats are limited, so book a trial to hold a place.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="sch-h">
+      <div class="container-x">
+        <h2 id="sch-h" class="sr-only" data-i18n="schedule.title">Weekly class schedule</h2>
+        <div role="group" aria-labelledby="flt-l">
+          <p id="flt-l" class="mb-3 text-sm font-bold text-muted" data-i18n="schedule.filter">Filter by level</p>
+          <div id="schedule-filters" class="flex flex-wrap gap-2"></div>
+        </div>
+        <p id="schedule-count" class="mt-5 text-sm font-bold text-muted" role="status" aria-live="polite"></p>
+        <div id="schedule-grid" class="mt-2 rounded-card bg-surface px-5 shadow-soft ring-1 ring-ink/5 sm:px-8"></div>
+        <p class="mt-6 text-sm text-muted" data-i18n="schedule.note">The timetable is updated every term. Contact us to confirm available seats.</p>
+        <p class="mt-6"><a class="btn btn-primary" href="book-trial.html" data-i18n="common.bookTrial">Book a free trial</a></p>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer"></footer>
+  <div id="chat-buttons"></div>
+  <noscript><p class="container-x py-6 text-center font-bold" data-i18n="common.needJs">Please enable JavaScript to see this section.</p></noscript>
+  <script src="assets/i18n/en.js"></script>
+  <script src="assets/i18n/vi.js"></script>
+  <script src="assets/data/levels.js"></script>
+  <script src="assets/data/schedule.js"></script>
+  <script src="assets/js/icons.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/schedule.js"></script>
+</body>
+</html>
